@@ -97,6 +97,14 @@ love6(1, 5) → True
 
 def love6(a, b):
   return (a == 6 or b == 6) or (a + b == 6) or (abs(a - b)== 6)
+OR
+
+def love6(a, b):
+  if a==6 or b==6:
+    return True
+  elif(a+b==6 or abs(a-b)==6):
+    return True
+  return False
 
 8.
 Given a number n, return True if n is in the range 1..10, inclusive. Unless outside_mode is True, in which case return True if the number is less or equal to 1, or greater or equal to 10.
