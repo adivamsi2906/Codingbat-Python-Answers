@@ -113,6 +113,15 @@ in1to10(5, False) → True
 in1to10(11, False) → False
 in1to10(11, True) → True
 
+def in1to10(n, outside_mode):
+  if(not outside_mode):
+    if n>=1 and n<=10:
+      return True
+    return False
+  if n<=1 or n>=10:
+    return True
+  return False
+
 9.
 Given a non-negative number "num", return True if num is within 2 of a multiple of 10. Note: (a % b) is the remainder of dividing a by b, so (7 % 5) is 2. See also: Introduction to Mod
 
