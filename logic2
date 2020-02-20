@@ -1,0 +1,26 @@
+1.MAKE BRICKS
+"""
+  We want to make a row of bricks that is goal inches long. We have a number of
+  small bricks (1 inch each) and big bricks (5 inches each). Return True if it 
+  is possible to make the goal by choosing from the given bricks. This is a 
+  little harder than it looks and can be done without any loops. 
+  """
+  SOLUTION:
+  
+  def make_bricks(small, big, goal):
+  res=goal
+  res-=5*min(big,goal/5)
+  return res-small<=0
+  
+2.Lone_Sum
+  Given 3 int values, a b c, return their sum. However, if one of the values 
+  is the same as another of the values, it does not count towards the sum.
+  SOLUTION:
+  def lone_sum(a, b, c):
+  sum=0
+  sum+=a if a not in [b,c] else 0
+  sum+=b if b not in [a,c] else 0
+  sum+=c if c not in [a,b] else 0
+  return sum
+
+3.
